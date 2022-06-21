@@ -1,0 +1,645 @@
+*, *:before, *:after{
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+@import url('https://fonts.googleapis.com/css2?family=Hurricane&family=Pinyon+Script&display=swap');
+
+
+header{
+    height: 60vh;
+    background: url(../img/eggs.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+    
+
+nav{
+    max-width: 1016px;
+    margin-left: auto;
+    margin-right: auto;
+
+    height: 7vh;
+    align-items: center;
+    background-color: transparent;
+}
+
+@media only screen and (max-width: 600px) { 
+    
+    nav{
+       
+    flex-wrap: wrap;
+    max-width: 600px;
+    margin: auto;
+    align-items: center;
+    background-color: transparent;
+    }
+    .logo{
+        margin: auto;
+        margin-top: 6px;
+       
+    }
+    
+}
+
+
+hr.title{
+    border: none;
+    width: 20px;
+    background-color: #C89446;
+    color: #C89446;
+    height: 2px;
+    margin-bottom: 10px;
+}
+
+h3{
+    font-family : 'Pinyon Script', serif;
+    color: #C89446;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+h4{
+    font-family: Helvetica, sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+}
+
+p{
+    font-family: Helvetica, sans-serif;  
+    font-size: 13px;
+    color: grey;
+    line-height: 20px;
+    margin-bottom: 20px;
+}
+
+footer{
+    background: url(../img/splash.png);
+    background-position: bottom right ;
+    background-repeat: no-repeat;
+    background-color: rgb(46, 45, 45);
+    height: 240px;
+}
+
+.menu-items{
+    list-style-type: none;
+    padding: 10px;
+}
+
+.menu-items li{
+    padding: 10px;
+    margin: 0 10px;
+    font-family: Helvetica, sans-serif;
+    text-transform: uppercase;
+    font-size: 13px;
+    
+}
+
+.menu-items li a {
+    padding: 20px 10px;
+    text-decoration: none;
+    color: white;
+}
+
+.menu-items li:hover{
+    background-color: #C89446;
+    transition: 0.3s;
+}
+
+
+.items-reservation{
+    border: 1px solid #C89446;
+}
+
+.logo{
+    font-size: 13px;
+    font-family: Helvetica, sans-serif;
+}
+
+.logo a{
+    color: white;
+    text-decoration: none
+}
+/* Container SLIDER!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+.detail{
+    width: 100%;
+    margin: auto;
+    height: 40vh;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.title{
+    color: white;
+    font-family : 'Source Sans Pro', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 13px;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.welcome{
+    font-family : 'Pinyon Script', serif;
+    color: #C89446;
+    font-size: 40px;
+}
+
+.sub-title{
+    font-family: Helvetica, sans-serif;
+    color: white;
+    font-size: 15px;
+    letter-spacing: 5px;
+    font-weight: lighter;
+    margin-top: 10px;
+}
+/* Container ABOUT!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+.container-apropos{
+    margin: auto;
+    margin-top: 10px;
+    flex-direction: column;
+}
+@media only screen and (max-width: 600px){
+    .container-apropos{
+        margin: auto;
+        margin-top: 10px;
+        flex-direction: column;
+        max-width: 600px;
+    }
+}
+
+.block-img{
+    padding-top: 10px;
+    width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+}
+
+.block-about{
+    background: url(../img/spices.jpg);
+    background-repeat: no-repeat;
+    background-position: top left;
+}
+
+.container-apropos{
+    background: url(../img/oranges.jpg);
+    background-repeat: no-repeat;
+    background-position: bottom right;
+}
+
+.block-img-eggs{
+    padding-top: 10px;
+    width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+}
+
+.burguer-img{
+    position: absolute;
+    width: 35vh;
+    height: 40vh;
+    z-index: 1;
+}
+@media only screen and (min-width: 992px) {
+.border-burguer{
+    position: relative;
+    content: '';
+    top: -30px;
+    left: -30px;
+    border: 2px solid #C89446;
+    width: 35vh;
+    height: 40vh;
+    z-index: 0;
+    }
+}
+
+.eggs-img{
+    position: absolute;
+    width: 35vh;
+    height: 40vh;
+    z-index: 1;
+}
+
+@media only screen and (min-width: 992px) {
+.border-eggs{
+    position: relative;
+    content: '';
+    top: -30px;
+    left: 30px;
+    border: 2px solid #C89446;
+    width: 35vh;
+    height: 40vh;
+    z-index: 0;
+    }
+}    
+
+.text-article{
+    width: 50vh;
+    height: 50vh;
+    margin-left: 60px;
+    flex-direction: column;
+    justify-content: center;
+}
+.text-article-left{
+    width: 50vh;
+    height: 50vh;
+    margin-right: 60px;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.btn{
+    text-decoration: none;
+    font-family: Helvetica, sans-serif;
+    color: #C89446;
+    font-size: 13px;
+    text-decoration: none;
+}
+
+.btn a:hover, a:active{
+    border-bottom: 1px solid  #C89446;
+    transition: 0.5s;
+}
+
+/* Container NAV-ALIM !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+.container-menu-alim{
+    background: url(../img/spices.jpg) no-repeat;
+    background-position: left;
+}
+
+.menu-alim{
+    width: 500px;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.nav-alim li {
+    list-style-type: none;
+    font-family: Helvetica, sans-serif;
+    text-transform: uppercase;
+    font-size: 13px;
+    font-weight: bold;
+    padding-bottom: 5px;
+    margin: 20px 30px;
+}
+
+.nav-alim li a{
+    color: black;
+    text-decoration: none;
+}
+
+.nav-alim li .active{
+    padding-bottom: 5px;
+}
+.nav-alim li:hover, li:active, li .active{
+    border-bottom: 1px solid  #C89446;
+    
+}
+
+/* Container IMG FOOD!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+.cnt-food{
+    margin-top: 90px;
+    margin-bottom: 90px;
+}
+
+.container-food{
+    background: url(../img/oranges.jpg);
+    background-repeat: no-repeat;
+    background-position: bottom right;
+    z-index: 1;
+    
+}
+
+.container-img-food{
+    display: flex;
+    justify-content: space-around;
+    max-width: 80%;
+    height: 200px;
+    margin: auto;
+    
+}
+@media only screen and (min-width: 992px) {
+    .losange{
+        position: absolute;
+        margin: auto;
+        content: '';
+        top: 3000px;
+        left: 0px;
+        bottom: 0px;
+        right: 0px;
+        border: 2px solid #C89446;
+        width: 350px;
+        height: 350px;
+        transform: rotate(45deg);
+        z-index: -10;
+    }
+
+}
+
+.box-food{
+
+    display: flex;
+    width: 350px;
+    height: 150px;
+   
+}
+.txt-food{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-left: 20px;
+    width: 297px;
+    height: 136px;
+   
+}
+.txt-food-right{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-right: 20px;
+    text-align: right;
+    width: 297px;
+    height: 80px;
+    
+}
+
+.box-food .img-food img{
+    width: 100%;
+}
+
+p.menu-p{
+    font-family: Helvetica, sans-serif;  
+    font-size: 13px;
+    color: grey;
+    background-color: white;
+    line-height: 20px;
+    margin-bottom: 20px;
+}
+
+.description{
+    font-family: Helvetica, sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    background-color: white;
+} */
+
+/* Container CHEF !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+.chief-box{
+    
+    height: 300px;
+}
+
+.chief-box-txt{
+    padding-bottom: 30px;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.chief-img{
+    height: 300px;
+}
+
+/* Container RESERVATION !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+.container-chef{
+    background: url(../img/spices.jpg) no-repeat;
+}
+.container-reservation{
+    margin: auto;
+    height: 55vh;
+    max-width: 100%;
+    background: url(../img/reservation.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.box-reservation{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 50px;
+}
+
+.txt-reservation{
+    padding: 30px;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 500px;
+    text-align: center;
+}
+
+ .formulaire{
+    display: flex;
+    flex-direction: column;
+    max-width: 680px;
+} 
+
+form{
+    margin-bottom: 50px;
+} 
+
+.form{ 
+    width: 200px;
+    background-color: transparent;
+    color: white;
+    padding: 6px;
+    margin: 10px;
+    border-radius: 2px;
+    border:1px solid rgb(163, 159, 159);
+    font-family: Helvetica, sans-serif;
+    font-size: 11px;
+}
+
+.maj-white{
+    font-family: Helvetica, sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+}
+
+hr.linge_reserv{
+    border: none;
+    width: 20px;
+    background-color: #C89446;
+    color: #C89446;
+    height: 2px;
+    margin-bottom: 10px;
+}
+
+.button{
+    margin: auto;
+    width: 200px;
+    background-color: #C89446;
+    border: none;
+    color: white;
+    padding: 10px;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.button:hover{
+    background-color: transparent;
+    border: white;
+    transition: 0.3s
+}
+
+/* container Recipes !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
+
+.container-recipes{
+    padding: 50px 0px;
+    max-width: 100%;
+    justify-content: flex-end;
+    background: url(../img/news-bg.jpg);
+    background-repeat: no-repeat;
+    background-position: top left;
+    background-size:  50vw auto;
+}
+
+.box-recipies{
+    flex-direction: column;
+    width: 1000px;
+    margin: auto;
+}
+
+.tex-recipies-header{
+    text-align: right;
+    flex-direction: column;
+}
+
+.recetas{
+    flex-direction: column;
+    max-width: 1000px;
+}
+hr.recipes{
+    border: none;
+    width: 20px;
+    background-color: #C89446;
+    color: #C89446;
+    height: 2px;
+    margin-bottom: 10px;
+    display: inline-block;
+}
+
+hr.recipes-hr{
+    border: none;
+    background-color: lightgray;
+    color: lightgray;
+    height: 1px;
+    margin-bottom: 10px;
+}
+
+.btn-recipes{
+    color: #C89446;
+    text-decoration: none;
+    font-size: 15px;
+}
+
+.recetas .btn-recipes a:hover a:active{
+    text-decoration: underline;
+}
+
+.s-simple{
+    font-family: Helvetica, sans-serif;  
+    font-size: 16px;
+    color: grey;
+    font-weight: lighter;
+
+}
+
+
+/* container MAP !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
+.container-map{
+    width: auto;
+}
+/* container FOOTER !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
+.container-footer{
+    display: flex;
+    justify-content: space-around;
+    max-width: 1200px;
+    margin: auto;
+    padding-top: 10px;
+}
+
+.box-footer{
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+}
+
+.box-footer .footer_fiasco{
+    max-width: 350px;
+
+}
+.box-footer h5{
+    margin-bottom: 20px;
+    color: #C89446;
+}
+.box-footer a{
+    font-family: Helvetica, sans-serif;
+    font-size: 13px;
+    margin-bottom: 20px;
+    color: gray;
+    text-decoration: none;
+}
+
+.box-footer a:hover{
+    opacity: 0.8;
+}
+
+
+
+
+
+
+
+.w-100{
+    width: 100%;
+}
+
+.col-1{
+    width: 8.33%;
+}
+.col-2{
+    width: 16.66%;
+}
+.col-4{
+    width: 33.33%;
+}
+
+.col-6{
+    width: 50%;
+}
+
+.col-8{
+    width: 66.66%
+}
+
+.d-flex{
+    display: flex;
+}
+.space-between{
+    justify-content: space-between;
+}
+.space-around{
+    justify-content: space-around;
+}
+.align-items{
+    align-items: center
+}
+.justify-content{
+    justify-content: center; 
+}
+
